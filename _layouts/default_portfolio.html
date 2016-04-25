@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="portfolio">
+
+	<header class="site-header">
+
+	  <div class="wrapper">
+
+	    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+	        <div class="container-fluid">
+	        	<a class="back" href="/">Back</a>
+	        </div>
+	    </nav>
+
+	  </div>
+
+	</header>
+
+    <div class="page-content">
+    	<div class="wrapper">
+    		<section>
+    			<div class="container">
+        			{{ content }}
+        		</div>
+        	</section>
+      	</div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
