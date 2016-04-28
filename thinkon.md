@@ -8,7 +8,7 @@ ThinkOn Business Gamechangers are a unique consultancy who partner with organisa
 
 The purpose of the site is to give an insight of what the company does and generate leads to potential clients. The brand is down to earth, clean and quirky.
 
-![thinkon](/images/thinkon.jpg)
+![thinkon](/images/think-on.jpg)
 
 Design, inital concepts with brand guidelines - worked with external branding expert.
 
@@ -18,11 +18,11 @@ The site is also fully responsive, so appears beautifully across a range of scre
 
 <h2>Tablet</h2>
 
-![thinkon](/images/thinkon3.jpg)
+![thinkon](/images/think-on3.jpg)
 
 <h2>Phone</h2>
 
-![thinkon](/images/thinkon2.jpg)
+![thinkon](/images/think-on2.jpg)
 
 The quirky people page gives the impression that the faces on screen follow your cursor. This was achieved by taking 9 photos of each person, then using a script to show the appropriate image dependant on the cursor position. You can see an example below:
 
