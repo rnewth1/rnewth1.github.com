@@ -270,6 +270,7 @@ a, a:focus {
 }
 @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
  	.navbar-brand {
-		background:url('/images/logo2x.png') no-repeat;
+		background-image:url('/images/logo2x.png');
+		background-size: 60px 60px;
 	}
 }
