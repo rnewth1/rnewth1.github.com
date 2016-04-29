@@ -18,8 +18,8 @@ I have been involved in various print work.
 
 ![go mad print](/images/gomad-print.jpg)
 
+<h2>Info</h2>
 
-
-Type: 
+Type: Handouts, Flyers, Brochures, Books, Business cards, Postcards, Bags, Pens
 
 Spec: InDesign, Illustrator, Photoshop.
