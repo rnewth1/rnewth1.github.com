@@ -4,7 +4,9 @@ title: Go MAD Thinking
 permalink: /gomad/
 ---
 
-ThinkOn was previously Go MAD Thinking.
+ThinkOn was previously Go MAD Thinking before rebranding late 2015.
+
+I rebreand
 
 ![go mad thinking](/images/gomad.jpg)
 
