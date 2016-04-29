@@ -14,7 +14,7 @@ These emails inform users of the new features and updates to iCheev.
 
 <h2>ThinkOn</h2>
 
-These campaigns are used to invite users along to programmes and keep them up-to-date with latest insights and tips.
+These campaigns are used to invite users along to programmes and keep them up-to-date with the latest insights and tips.
 
 ![email campaigns](/images/email2.jpg)
 
