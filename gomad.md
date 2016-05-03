@@ -4,18 +4,18 @@ title: Go MAD Thinking
 permalink: /gomad/
 ---
 
-ThinkOn was previously Go MAD Thinking before rebranding late 2015.
+Go MAD Thinking was the original name for ThinkOn, before rebranding in late 2015.
 
-I rebreand
+I designed and developed the custom, responsive Wordpress theme. It was therefore easy to update and maintain. 
+
+I also used an ecommerce plugin to create a shop which sold books, eBooks and CDs.
 
 ![go mad thinking](/images/gomad.jpg)
 
+The site also had a range splash pages which delivered sales offers, as shown below.
+
 ![go mad thinking](/images/gomad2.jpg)
-
-Design
-
-Build, responsive, wordpress, shop
 
 Type: Brochure website
 
-Spec: 
+Spec: Wordpress, HTML5/CSS3, Responsive, Shop
