@@ -4,7 +4,7 @@ title: Go MAD Thinking
 permalink: /gomad/
 ---
 
-Go MAD Thinking was the original name for ThinkOn, before rebranding in late 2015.
+Go MAD Thinking was the original name for <a href="http://rnewth1.github.com/thinkon">ThinkOn</a>, before rebranding in late 2015.
 
 I designed and developed the custom, responsive Wordpress theme. It was therefore easy to update and maintain. 
 
