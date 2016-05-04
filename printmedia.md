@@ -16,7 +16,7 @@ I have been involved in various print work.
 
 ![thinkon print](/images/thinkon-print.jpg)
 
-<h2>Stand design - Learning Technologies 2016</h2>
+<h2>Stand Design - Learning Technologies 2016</h2>
 
 ![thinkon stand](/images/thinkon-stand.jpg)
 
@@ -24,7 +24,7 @@ I have been involved in various print work.
 
 ![icheev brochure](/images/icheev-brochure.jpg)
 
-<h2>Book Covers, Business Cards and Post Cards</h2>
+<h2>Book Covers, Business Cards and Postcards</h2>
 
 ![go mad print](/images/gomad-print.jpg)
 
