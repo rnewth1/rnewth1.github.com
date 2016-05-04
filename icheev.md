@@ -44,7 +44,7 @@ Thinking around the ten possibility areas ensures that you are ready to produce 
 
 <h2>Creative Thinking</h2>
 
-Inspiring pictures and quirky questions, engage your brain to see a whole new world of possibilities.
+With inspiring pictures and quirky questions, engage your brain to see a whole new world of possibilities.
 
 ![icheev creative](/images/gifs/creative.gif)
 

@@ -16,7 +16,7 @@ I have been involved in various print work.
 
 ![thinkon print](/images/thinkon-print.jpg)
 
-<h2>Stand work - Learning Technologies 2016</h2>
+<h2>Stand design - Learning Technologies 2016</h2>
 
 ![thinkon stand](/images/thinkon-stand.jpg)
 
