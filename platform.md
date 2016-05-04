@@ -4,7 +4,7 @@ title: Digital Platform
 permalink: /platform/
 ---
 
-This is a concept for a digital platform I am currently working on for ThinkOn.
+This is a concept for a digital platform that I am currently working on for ThinkOn.
 
 It’s purpose is to be a central dashboard, tying together a number of apps and passing data through their APIs.
 
