@@ -1,0 +1,111 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Icon template
+ * - Used by gulp-svg-sprite to generate icons
+ * - Additional variables loaded in from gulpfile.js
+ *   - spriteName 	  : Icon name
+     - spriteDimsX 	  : Icon width
+     - spriteDimsY    : Icon height
+ * - spriteName used to create unique mixin names in case
+     multiple icon tasks are created.
+ * -------------------
+ *
+ */
+
+
+/*
+ * Sass map of icons
+ */
+
+${{ spriteName }}s: (
+	{{ #shapes }}
+	{{ base }}: (positionX: {{ position.relative.x }}%, positionY: {{ position.relative.y }}%),
+	{{ /shapes }}
+);
+
+
+/*
+ * Icon base
+ * Sets base styles for all icons
+ */
+
+@mixin {{ spriteName }}-base {
+	display: inline-block;
+	background-image: url({{{ sprite }}});
+	background-position: no-repeat;
+	background-size: auto 100%;
+}
+
+
+/*
+ * Icon size
+ * Sets icon size
+ */
+
+@mixin {{ spriteName }}-size($size: 1) {
+	width: {{ spriteDimsX }}px * $size;
+	height: {{ spriteDimsY }}px * $size;
+}
+
+
+/*
+ * Icon
+ * Adds all necessary styles to add an icon.
+ * Includes icon base styles, a specific icon sprite and sets a size.
+ */
+
+@mixin {{ spriteName }}($sprite, $size: 1) {
+	@include {{ spriteName }}-base();
+	@include {{ spriteName }}-sprite($sprite);
+	@include {{ spriteName }}-size($size);
+}
+
+
+/*
+ * Icon
+ * Used to include a specific icon only
+ */
+
+@mixin {{ spriteName }}-sprite($sprite) {
+	$sprite: map-get(${{ spriteName }}s, $sprite);
+	background-position: map-get($sprite, positionX) map-get($sprite, positionY);
+	content: '\00a0';
+}
+
+
+/*
+ * Base icon class
+ * Used to include icons within markup in conjuction with
+ * a specific icon class. Sets base and size styles.
+ */
+
+.icon {
+	@include {{ spriteName }}-base();
+	@include {{ spriteName }}-size();
+}
+
+
+/*
+ * Example icon size modifier
+ * Project dependent, represents a high level reusable way of
+ * setting a consistent icon size
+ */
+
+.icon--large {
+	@include {{ spriteName }}-size(2);
+}
+
+
+/*
+ * Specific icon sprite classes
+ */
+ 
+{{ #shapes }}
+.icon__{{ base }} {
+	background-position: {{position.relative.x}}% {{position.relative.y}}%;
+}
+
+{{/shapes}}

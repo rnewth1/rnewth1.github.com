@@ -1,0 +1,112 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Icon template
+ * - Used by gulp-svg-sprite to generate icons
+ * - Additional variables loaded in from gulpfile.js
+ *   - spriteName 	  : Icon name
+     - spriteDimsX 	  : Icon width
+     - spriteDimsY    : Icon height
+ * - spriteName used to create unique mixin names in case
+     multiple icon tasks are created.
+ * -------------------
+ *
+ */
+
+
+/*
+ * Sass map of icons
+ */
+
+$icons: (
+	linkedin: (positionX: 0%, positionY: 0%),
+	twitter: (positionX: 100%, positionY: 0%),
+);
+
+
+/*
+ * Icon base
+ * Sets base styles for all icons
+ */
+
+@mixin icon-base {
+	display: inline-block;
+	background-image: url(../img/icon/dist/icons.svg);
+	background-position: no-repeat;
+	background-size: auto 100%;
+}
+
+
+/*
+ * Icon size
+ * Sets icon size
+ */
+
+@mixin icon-size($size: 1) {
+	width: 36px * $size;
+	height: 36px * $size;
+}
+
+
+/*
+ * Icon
+ * Adds all necessary styles to add an icon.
+ * Includes icon base styles, a specific icon sprite and sets a size.
+ */
+
+@mixin icon($sprite, $size: 1) {
+	@include icon-base();
+	@include icon-sprite($sprite);
+	@include icon-size($size);
+}
+
+
+/*
+ * Icon
+ * Used to include a specific icon only
+ */
+
+@mixin icon-sprite($sprite) {
+	$sprite: map-get($icons, $sprite);
+	background-position: map-get($sprite, positionX) map-get($sprite, positionY);
+	content: '\00a0';
+}
+
+
+/*
+ * Base icon class
+ * Used to include icons within markup in conjuction with
+ * a specific icon class. Sets base and size styles.
+ */
+
+.icon {
+	@include icon-base();
+	@include icon-size();
+}
+
+
+/*
+ * Example icon size modifier
+ * Project dependent, represents a high level reusable way of
+ * setting a consistent icon size
+ */
+
+.icon--large {
+	@include icon-size(2);
+}
+
+
+/*
+ * Specific icon sprite classes
+ */
+ 
+.icon__linkedin {
+	background-position: 0% 0%;
+}
+
+.icon__twitter {
+	background-position: 100% 0%;
+}
+

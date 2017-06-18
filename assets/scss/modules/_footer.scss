@@ -1,0 +1,20 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Footer
+ * -------------------
+ *
+ */
+
+.footer {
+    @include clearfix();
+
+    &__copyright {
+        text-align: center;
+        font-size: .8em;
+        margin-bottom: $spacing/2;
+        letter-spacing: 0.08em;
+    }
+}

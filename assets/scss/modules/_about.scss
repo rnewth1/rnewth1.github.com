@@ -1,0 +1,102 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * About
+ * -------------------
+ *
+ */
+
+.about {
+    @include clearfix();
+    margin-bottom: $spacing;
+
+    @include media-query(min, $lap-start) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    &__container {
+        background-color: $color-silver;
+        padding: $spacing $spacing/2;
+        @include clearfix();
+
+        @include media-query(min, $lap-start) {
+            padding: $spacing;
+        }
+
+        &:nth-child(3), &:nth-child(4) {
+            border-top: 1px solid $color-silver;
+
+            @include media-query(min, $lap-start) {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        &:last-child {
+
+            @include media-query(min, $lap-start) {
+                border-left: 1px solid $color-silver;
+            }
+        }
+
+        &--shaded {
+    		background-color: $color-pencil;
+            color: $color-silver;
+
+            #{headings(1,6)} {
+                color: $color-silver;
+            }
+    	}
+    }
+
+    &__image {
+        @include media-query(max, $mob-start) {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        @include media-query(min, $mob-start) {
+            @include span(4 of 12 2);
+        }
+    }
+
+    &__supporting-text {
+
+        p {
+
+            &:first-child {
+                font-weight: $weight-semibold;
+
+                @include media-query(min, $mob-start) {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        @include media-query(min, $mob-start) {
+            @include span(8 of 12 2 last);
+        }
+    }
+
+    &__sub-title {
+        margin-top: $spacing;
+
+        &:first-child {
+            margin-top: $spacing/2;
+        }
+    }
+
+    &__title {
+
+        &--spacing {
+            margin-top: 1.5em;
+        }
+    }
+}

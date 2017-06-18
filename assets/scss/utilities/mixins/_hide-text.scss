@@ -1,0 +1,16 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Hide text
+ * -------------------
+ *
+ */
+
+
+@mixin hide-text {
+    text-indent: -999em;
+    white-space: nowrap;
+    overflow: hidden;
+}

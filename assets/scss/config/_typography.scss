@@ -1,0 +1,63 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Typography
+ * - Config for everything typography across the project
+ * - Does not include typographic config for components, objects, modules
+ * -------------------
+ *
+ */
+
+
+/*
+ * Stacks
+ */
+
+$font-body:               'Libre Baskerville', serif;
+$font-mono:               Courier New;
+
+
+/*
+ * Weights
+ */
+
+$weight-thin:             100;
+$weight-extra-light:      200;
+$weight-light:            300;
+$weight-regular:          400;
+$weight-medium:           500;
+$weight-semibold:         600;
+$weight-bold:             700;
+$weight-heavy:            800;
+$weight-black:            900;
+
+
+/*
+ * Font scaling
+ * Used to switch between modular and traditional scaling.
+ */
+
+$font-scale:              false;
+
+
+/*
+ * Modular scale config
+ * Cannot be placed inside mixin as the modular scale
+ * settings aren't initialised.
+ */
+
+@if $font-scale == true {
+    $ms-base:             1em;
+    $ms-range:            1.1 $lap-start, 1.3 $wide-start;
+}
+
+
+/*
+ * Spacing
+ */
+
+$baseline:                1.35;
+$kern-display:            -0.025em;
+$kern-body:               normal;

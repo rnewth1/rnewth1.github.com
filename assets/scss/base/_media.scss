@@ -1,0 +1,29 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Media
+ * - images, video, figures, embeds
+ * -------------------
+ *
+ */
+
+img,
+video,
+embed {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    position: relative;
+    margin-bottom: 3em;
+
+    img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}

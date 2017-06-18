@@ -1,0 +1,68 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Layout
+ * - Page widths and main breakpoint configuration
+ * - Grid config and gutter widths
+ * - z-index vars
+ * -------------------
+ *
+ */
+
+
+/*
+ * General
+ */
+
+$page-width:        105.555555555555em;
+
+
+/*
+ * z-index
+ */
+
+$zindex-super:      9999;
+$zindex-higher:     20;
+$zindex-high:       10;
+$zindex-mid:        5;
+$zindex-low:        2;
+
+
+/*
+ * Main breakpoints
+ */
+
+$mob-start:         30em;
+$lap-start:         42.66666666666em;
+$desk-start:        56.8888888888em;
+$wide-start:        $page-width;
+
+$breakpoints: (
+    'palm'  0             $lap-start,
+    'lap'   $lap-start    $desk-start,
+    'desk'  $desk-start   $page-width,
+    'wide'  $wide-start   9999em
+);
+
+
+/*
+ * Spacing
+ */
+
+$spacing: 2em;
+
+
+/*
+ * Susy config
+ */
+
+$susy: (
+ 	flow: ltr,
+ 	container-position: center,
+ 	columns: 12,
+ 	gutters: .25,
+ 	global-box-sizing: border-box,
+ 	last-flow: from
+);

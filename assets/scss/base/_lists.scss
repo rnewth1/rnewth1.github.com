@@ -1,0 +1,30 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Lists
+ * -------------------
+ *
+ */
+
+
+/*
+ * ---------------
+ * Styling
+ * ---------------
+ */
+
+ul, ol {
+    margin-left: 1em;
+    padding-left: .75em;
+    line-height: $baseline;
+
+    li {
+        margin-top: .5em;
+    }
+}
+
+ul {
+    list-style: square;
+}

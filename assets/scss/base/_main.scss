@@ -1,0 +1,78 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Main
+ * - html & body base styling
+ * -------------------
+ *
+ */
+
+
+/*
+ * Config
+ */
+
+/*
+ * Mixin - Font scale size
+ * Sets the initial font scale size.
+ *
+ * $scale: [true | false] - Set to true to use first value.
+ * $modular-size: Base modular scale font size-base.
+ * $size: Original base font size.
+ */
+
+@mixin font-scale-size($scale, $modular-size: 1em, $size: 62.5%) {
+    @if $scale == true {
+        font-size: $modular-size;
+    } @else {
+        font-size: $size;
+    }
+}
+
+/*
+ * Mixin - Font scale body
+ * Sets body font scaling
+ * $scale: [true | false] - Set to true to use modular scale.
+ */
+
+@mixin font-scale-body($scale) {
+    @if $scale == true {
+        @include ms-respond(font-size, 1);
+    } @else {
+        font-size: 1.4rem;
+
+        // @include media-query(min, $lap-start) {
+        //     font-size: 1.8rem;
+        // }
+    }
+}
+
+
+/*
+ * Styling
+ */
+
+html {
+    font-family: $font-body;
+    box-sizing: border-box;
+    @include font-scale-size($font-scale);
+    @include smoothing();
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: $color-pencil;
+    text-rendering: optimizeLegibility; // https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+    @include font-scale-body($font-scale);
+}
+
+::selection {
+    background: $color-silver;
+}
