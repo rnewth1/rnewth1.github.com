@@ -1,0 +1,19 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Helper Classes
+ * -------------------
+ *
+ */
+
+
+/*
+ * Layout
+ */
+ 
+.clearfix,
+.cf {
+    @include clearfix();
+}

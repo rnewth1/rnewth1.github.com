@@ -1,0 +1,56 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Base / Forms
+ * -------------------
+ *
+ * - Base styling for forms
+ *
+ */
+
+
+/*
+ * Inputs
+ */
+
+input,
+textarea {
+    @include smoothing();
+    background: #f1f1f1;
+    border: 2px solid #0080ac;
+    padding: 1em .75em;
+    -webkit-appearance: none;
+    width: 100%;
+
+    &:focus {
+        background: $color-white;
+        outline: 0;
+    }
+}
+
+textarea {
+    height: 7.5em;
+}
+
+
+/*
+ * Labels
+ */
+
+label {
+    display: block;
+    margin: 0 0 0.25em 0;
+}
+
+
+/*
+ * Containers
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}

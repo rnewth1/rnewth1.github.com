@@ -1,0 +1,24 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Font scale
+ * -------------------
+ *
+ */
+
+
+/*
+ * Font scale element size
+ * Checks if font-scale is true and sets the appropriate scale.
+ *
+ * $scale: [true / false]
+ * $size: [integer] e.g. -1, 0, 1, 2, 3
+ */
+
+@mixin font-scale-element-size($scale, $size) {
+    @if $scale == true {
+        @include ms-respond(font-size, $size);
+    }
+}

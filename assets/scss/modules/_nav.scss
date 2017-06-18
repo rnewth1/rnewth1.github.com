@@ -1,0 +1,21 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Nav
+ * -------------------
+ *
+ */
+
+.nav {
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        list-style: none;
+        font-size: 2.2em;
+        font-weight: $weight-semibold;
+        margin-top: .2em;
+    }
+}

@@ -1,0 +1,24 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Contact
+ * -------------------
+ *
+ */
+
+.contact {
+    @include clearfix();
+    text-align: center;
+
+    &__button {
+        margin-top: 0;
+        float: left;
+    }
+
+    &__buttons {
+        display: inline-block;
+        margin-bottom: $spacing/2;
+    }
+}

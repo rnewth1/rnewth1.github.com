@@ -1,0 +1,16 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Font Smoothing
+ * -------------------
+ *
+ */
+
+
+@mixin smoothing() {
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: greyscale;
+}

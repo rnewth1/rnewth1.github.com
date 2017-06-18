@@ -1,0 +1,20 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Container
+ * -------------------
+ *
+ */
+
+@mixin container-base {
+	@include clearfix();
+	margin: 0 auto;
+	padding: 0 $spacing/2;
+	max-width: 54.858em;
+}
+
+.container {
+	@include container-base();
+}

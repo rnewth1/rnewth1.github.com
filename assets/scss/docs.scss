@@ -1,0 +1,33 @@
+@import "core.scss";
+
+.doc-hero {
+    text-align: center;
+    background: $color-primary;
+    padding: 20vh 0;
+    color: $color-white;
+    text-transform: capitalize;
+    @include smoothing();
+
+    &--short {
+        background: #d0d0d0;
+        color: #c1c1c1;
+        padding: 5vh 0;
+    }
+
+    &__title {
+        color: inherit;
+    }
+}
+
+.doc-nav {
+    text-transform: capitalize;
+
+    a {
+        display: block;
+    }
+
+    @include media-query(min, $lap-start) {
+        float: left;
+        width: 50%;
+    }
+}

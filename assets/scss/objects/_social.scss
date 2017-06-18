@@ -1,0 +1,70 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Social
+ * -------------------
+ *
+ */
+
+.social {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        line-height: 0;
+
+        .contact & {
+            float: left;
+            margin-left: 5px;
+        }
+    }
+
+    &__link {
+        display: block;
+        border: 1px solid $color-primary;
+        @include hide-text;
+        position: relative;
+
+        &:before {
+            content: "";
+            border: 1px solid #393939;
+            display: block;
+            position: absolute;
+            left: 1px;
+            right: 1px;
+            top: 1px;
+            bottom: 1px;
+            margin: 1px;
+            z-index: -1;
+            background: $color-white;
+            transition: outline-color .5s ease;
+            outline: 2px solid $color-white;
+
+            .hero & {
+                background-color: $color-silver;
+                outline-color: $color-silver;
+            }
+        }
+
+        &:hover, &:active, &:focus {
+
+            &:before {
+                outline: 2px solid $color-primary;
+            }
+        }
+    }
+
+    &__twitter {
+        @include icon(twitter);
+    }
+
+    &__linkedin {
+        @include icon(linkedin);
+    }
+}

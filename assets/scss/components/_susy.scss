@@ -1,0 +1,95 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Susy - Example grid system
+ * This is purely a template and you should build a custom solution
+ * tailored to your classes
+ * http://susydocs.oddbird.net/en/latest/
+ * -------------------
+ *
+ */
+
+
+/*
+ * ---------------
+ * Styling
+ * ---------------
+ */
+
+/*
+ * Method 1: Using gallery mixin to clear margins
+ * at various breakpoints
+ */
+
+.susy {
+	@include container(100%);
+	margin: ($spacing * .67) 0;
+
+	&__grid {
+		@include gallery(6);
+		height: 10em;
+		background: $color-primary;
+		margin-bottom: $spacing / 2;
+
+		&:nth-child(odd) {
+			background: lighten($color-primary, 10%);
+		}
+
+		@include media-query(min, $lap-start) {
+			@include gallery(4);
+		}
+
+		@include media-query(min, $desk-start) {
+			@include gallery(3);
+		}
+	}
+}
+
+/*
+ * Method 2: Using nth-child and span mixin to clear margins
+ * at various breakpoints
+ */
+
+.susy-span {
+	@include container(100%);
+	margin: ($spacing * .67) 0;
+
+	&__grid {
+		@include span(6);
+		height: 10em;
+		background: $color-primary;
+		margin-bottom: $spacing / 2;
+
+		@include media-query-bracket($lap-start, $desk-start) {
+			@include span(4);
+		}
+
+		@include media-query(min, $desk-start) {
+			@include span(3);
+		}
+
+		&:nth-child(odd) {
+			background: lighten($color-primary, 10%);
+		}
+
+		&:nth-child(even) {
+			@include media-query(max, $lap-start) {
+				@include last;
+			}
+		}
+
+		&:nth-child(3n+3) {
+			@include media-query-bracket($lap-start, $desk-start) {
+				@include last;
+			}
+		}
+
+		&:nth-child(4n+4) {
+			@include media-query(min, $desk-start) {
+				@include last;
+			}
+		}
+	}
+}

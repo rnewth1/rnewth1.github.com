@@ -1,0 +1,166 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Grid
+ * -------------------
+ *
+ */
+
+
+/*
+ * ---------------
+ * Config
+ * ---------------
+ */
+
+/*
+ * Config - Grid Spacing
+ */
+
+$grid-horizontal-spacing:         $spacing / 2;
+$grid-horizontal-spacing-tablet:  $grid-horizontal-spacing;
+$grid-primary-breakpoint:         $lap-start;
+
+
+/*
+ * Mixin - Specific grid width class generation
+ */
+
+@mixin context-widths($context, $grids) {
+    @each $grid in $grids {
+        @for $i from 1 through $grid {
+            .#{$context}-#{$grid}-#{$i} {
+                width: ($i / $grid) * 100%;
+            }
+        }
+    }
+}
+
+
+/*
+ * Mixin - Offset grid class generation
+ */
+
+@mixin context-offsets($context, $grids) {
+    @each $grid in $grids {
+        @for $i from 1 through $grid {
+            .#{$context}-offset-#{$grid}-#{$i} {
+                margin-left: ($i / $grid) * 100%;
+            }
+
+            .#{$context}-offset-#{$grid}-#{$i}-right {
+                margin-right: ($i / $grid) * 100%;
+            }
+        }
+    }
+}
+
+
+/*
+ * Mixin - Blockgrids
+ * - outputs block grid classes e.g. '.grid--lap-2-up' means on lap, grid cells widths are 2up (50/50)
+ */
+
+@mixin context-blockgrids($context, $grids) {
+    @each $grid in $grids {
+        .grid--#{$context}-#{$grid}up > .grid__cell {
+            width: (1 / $grid) * 100%
+        }
+
+        .grid--#{$context}-#{$grid}up > .grid__cell:nth-child(#{$grid}n+1) {
+            clear: left;
+        }
+    }
+}
+
+
+/*
+ * ---------------
+ * Styling
+ * ---------------
+ */
+
+.grid {
+    @include clearfix();
+    margin-left: -1 * $grid-horizontal-spacing;
+
+    @include media-query(min, $grid-primary-breakpoint){
+        margin-left: -1 * $grid-horizontal-spacing-tablet;
+    }
+
+    &__cell {
+        float: left;
+        display: inline;
+        min-height: 1px;
+        padding-left: $grid-horizontal-spacing;
+        margin: 0 0 3em;
+        width: 100%;
+
+        @include media-query(min, $grid-primary-breakpoint){
+            padding-left: $grid-horizontal-spacing-tablet;
+        }
+    }
+
+
+    /*
+     * Mod - Expanded
+     * (increases the gutter width)
+     */
+
+    &--expanded {
+        margin-left: -1 * ($grid-horizontal-spacing * 2);
+
+        @include media-query(min, $grid-primary-breakpoint){
+            margin-left: -1 * ($grid-horizontal-spacing-tablet * 2);
+        }
+
+        .grid__cell {
+            padding-left: $grid-horizontal-spacing * 2;
+
+            @include media-query(min, $grid-primary-breakpoint){
+                padding-left: $grid-horizontal-spacing-tablet * 2;
+            }
+        }
+    }
+
+
+    /*
+     * Mod - Equal Spacing
+     * (makes the horizontal and vertical spacing equal)
+     */
+
+    &--equal-spacing {
+        .grid__cell {
+            margin-bottom: $spacing / 2;
+
+            @include media-query(min, $grid-primary-breakpoint){
+                margin-bottom: $spacing * .67;
+            }
+        }
+    }
+}
+
+
+/*
+ * Styling - Breakpoint specific grid generator
+ * (generates grid classes like lap-6-2 and lap-2up)
+ */
+
+$grids: (2, 3, 4);
+
+@each $breakpoint in $breakpoints {
+    $context: nth($breakpoint, 1);
+    $min:     nth($breakpoint, 2);
+    $max:     nth($breakpoint, 3);
+
+    @include media-query(min, $min) {
+        @include context-widths($context, $grids); // * e.g. <div class="lap-4-2" />
+        @include context-offsets($context, $grids); // * e.g. <div class="lap-offset-4-2" />
+    }
+
+    @include media-query-bracket($min, $max) {
+        @include context-blockgrids($context, $grids); // * e.g. <div class="grid--lap-2up" />
+    }
+}

@@ -1,0 +1,56 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Work
+ * -------------------
+ *
+ */
+
+.work {
+    @include clearfix();
+
+    &__title {
+        padding-top: .5em;
+    }
+
+    &__items {
+        @include media-query(min, $mob-start) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        margin-bottom: $spacing;
+        position: relative;
+        padding-bottom: $spacing*1.75;
+
+        @include media-query(min, $mob-start) {
+            @include span(6 of 12 2);
+
+            &:nth-of-type(2n) {
+                @include span(6 of 12 2 last);
+            }
+        }
+
+        &-image {
+            margin-bottom: $spacing/2;
+        }
+
+        &-text {
+
+            &--italics {
+                font-style: italic;
+                color: $color-gray;
+                font-size: .9em;
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 0;
+    }
+}

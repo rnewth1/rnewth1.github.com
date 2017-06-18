@@ -1,0 +1,135 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Hero
+ * -------------------
+ *
+ */
+
+.hero {
+    @include clearfix();
+    background: $color-charcoal;
+    min-height: 32.143em;
+    position: relative;
+    height: 100vh;
+    border: 1em solid $color-white;
+
+    &__container {
+        position: absolute;
+        bottom: $spacing;
+        width: 100%;
+    }
+
+    &__menu {
+        position: absolute;
+        background: $color-silver;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        display: none;
+
+        .menu-open & {
+            display: block;
+        }
+
+        &-content {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .social {
+                margin-top: $spacing/2;
+            }
+        }
+
+        &-icon {
+            cursor: pointer;
+            display: block;
+            height: 17px;
+            width: 20px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 11;
+
+            &:hover, &:active, &:focus {
+                .hero__menu-lines {
+                    &:before {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        &-lines {
+            display: block;
+            height: 2px;
+            width: 20px;
+            background: $color-silver;
+            position: relative;
+            top: 7px;
+
+            .active & {
+                background: none;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 18px;
+                background: $color-silver;
+                position: relative;
+                top: -7px;
+                transition: width .3s ease;
+
+                .active & {
+                    transform: rotate(-45deg);
+                    top: 0;
+                    width: 20px;
+                    background: $color-primary;
+                }
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 20px;
+                background: $color-silver;
+                position: relative;
+                top: 5px;
+
+                .active & {
+                    transform: rotate(45deg);
+                    top: -2px;
+                    background: $color-primary;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: 168px;
+        height: 168px;
+        margin: 0 auto $spacing/2;
+    }
+
+    &__title {
+        color: $color-silver;
+        margin-bottom: .3em;
+    }
+
+    &__text {
+        color: $color-silver;
+        text-align: center;
+        font-size: 1.2em;
+        line-height: $baseline;
+        letter-spacing: 0.08em;
+        margin: 0;
+    }
+}

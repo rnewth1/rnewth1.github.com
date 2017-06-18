@@ -1,0 +1,38 @@
+/*
+ *
+ * Robert Newth
+ *
+ * -------------------
+ * Colours
+ * -------------------
+ *
+ */
+
+
+/*
+ * Neutrals
+ */
+
+$color-white:            rgb(255, 255, 255);
+$color-black:            rgb(0, 0, 0);
+
+
+/*
+ * Custom colours
+ */
+
+$color-primary:          #393939;
+
+$color-charcoal:         #393939;
+$color-pencil:           #464646;
+$color-gray:             #898989;
+$color-silver:           #C2C2C2;
+
+
+/*
+ * Status
+ */
+
+$color-failure:          #C0392B !default;
+$color-alert:            #F4D03F !default;
+$color-success:          #87D37C !default;
