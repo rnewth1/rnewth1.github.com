@@ -1,0 +1,180 @@
+.alert--cookie .container::before,
+.icon-alert-cookie { background-image: url('png/alert-cookie.png'); background-repeat: no-repeat; }
+
+.icon-alert-warning-white { background-image: url('png/alert-warning-white.png'); background-repeat: no-repeat; }
+
+.alert--warning .container::before,
+.site-announcement__content::before,
+.icon-alert-warning { background-image: url('png/alert-warning.png'); background-repeat: no-repeat; }
+
+.site-header--internal .list__link:hover .icon-header-account,
+.icon-header-account-standout { background-image: url('png/header-account-standout.png'); background-repeat: no-repeat; }
+
+.site-header--internal .icon-header-account,
+.icon-header-account-white { background-image: url('png/header-account-white.png'); background-repeat: no-repeat; }
+
+.icon-header-account { background-image: url('png/header-account.png'); background-repeat: no-repeat; }
+
+.site-header--internal .list__link:hover .icon-header-bookmark,
+.icon-header-bookmark-standout { background-image: url('png/header-bookmark-standout.png'); background-repeat: no-repeat; }
+
+.site-header--internal .icon-header-bookmark,
+.icon-header-bookmark-white { background-image: url('png/header-bookmark-white.png'); background-repeat: no-repeat; }
+
+.icon-header-bookmark { background-image: url('png/header-bookmark.png'); background-repeat: no-repeat; }
+
+.icon-header-logo-crest { background-image: url('png/header-logo-crest.png'); background-repeat: no-repeat; }
+
+.icon-header-logo { background-image: url('png/header-logo.png'); background-repeat: no-repeat; }
+
+.site-header--internal .list__link:hover .icon-header-menu,
+.icon-header-menu-standout { background-image: url('png/header-menu-standout.png'); background-repeat: no-repeat; }
+
+.site-header--internal .icon-header-menu,
+.icon-header-menu-white { background-image: url('png/header-menu-white.png'); background-repeat: no-repeat; }
+
+.icon-header-menu { background-image: url('png/header-menu.png'); background-repeat: no-repeat; }
+
+.site-header .list__link:hover .icon-header-search,
+.site-header--internal .list__link .icon-header-search,
+.icon-header-search-primary { background-image: url('png/header-search-primary.png'); background-repeat: no-repeat; }
+
+.icon-header-search { background-image: url('png/header-search.png'); background-repeat: no-repeat; }
+
+.icon-header-search.primary { background-image: url('png/header-search.primary.png'); background-repeat: no-repeat; }
+
+.site-header--internal .list__link:hover .icon-header-translate,
+.icon-header-translate-standout { background-image: url('png/header-translate-standout.png'); background-repeat: no-repeat; }
+
+.site-header--internal .icon-header-translate,
+.icon-header-translate-white { background-image: url('png/header-translate-white.png'); background-repeat: no-repeat; }
+
+.icon-header-translate { background-image: url('png/header-translate.png'); background-repeat: no-repeat; }
+
+.icon-logo--crest { background-image: url('png/logo--crest.png'); background-repeat: no-repeat; }
+
+.title-with-crest::before,
+.icon-logo-crest { background-image: url('png/logo-crest.png'); background-repeat: no-repeat; }
+
+.icon-logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
+
+.icon-pin { background-image: url('png/pin.png'); background-repeat: no-repeat; }
+
+.icon-placeholder { background-image: url('png/placeholder.png'); background-repeat: no-repeat; }
+
+.icon-share { background-image: url('png/share.png'); background-repeat: no-repeat; }
+
+.icon-social-facebook-filled { background-image: url('png/social-facebook-filled.png'); background-repeat: no-repeat; }
+
+.icon-social-facebook { background-image: url('png/social-facebook.png'); background-repeat: no-repeat; }
+
+.icon-social-google-filled { background-image: url('png/social-google-filled.png'); background-repeat: no-repeat; }
+
+.icon-social-google { background-image: url('png/social-google.png'); background-repeat: no-repeat; }
+
+.icon-social-instagram { background-image: url('png/social-instagram.png'); background-repeat: no-repeat; }
+
+.icon-social-linkedin-filled { background-image: url('png/social-linkedin-filled.png'); background-repeat: no-repeat; }
+
+.icon-social-nstagram { background-image: url('png/social-nstagram.png'); background-repeat: no-repeat; }
+
+.icon-social-rss { background-image: url('png/social-rss.png'); background-repeat: no-repeat; }
+
+.icon-social-twitter-filled { background-image: url('png/social-twitter-filled.png'); background-repeat: no-repeat; }
+
+.icon-social-twitter-primary { background-image: url('png/social-twitter-primary.png'); background-repeat: no-repeat; }
+
+.icon-social-twitter { background-image: url('png/social-twitter.png'); background-repeat: no-repeat; }
+
+.icon-task-about-white { background-image: url('png/task-about-white.png'); background-repeat: no-repeat; }
+
+.icon-task-about { background-image: url('png/task-about.png'); background-repeat: no-repeat; }
+
+.icon-task-build-white { background-image: url('png/task-build-white.png'); background-repeat: no-repeat; }
+
+.icon-task-build { background-image: url('png/task-build.png'); background-repeat: no-repeat; }
+
+.icon-task-business-white { background-image: url('png/task-business-white.png'); background-repeat: no-repeat; }
+
+.icon-task-business { background-image: url('png/task-business.png'); background-repeat: no-repeat; }
+
+.icon-task-calculator-white { background-image: url('png/task-calculator-white.png'); background-repeat: no-repeat; }
+
+.icon-task-calculator { background-image: url('png/task-calculator.png'); background-repeat: no-repeat; }
+
+.icon-task-care-white { background-image: url('png/task-care-white.png'); background-repeat: no-repeat; }
+
+.icon-task-care { background-image: url('png/task-care.png'); background-repeat: no-repeat; }
+
+.icon-task-certificate-white { background-image: url('png/task-certificate-white.png'); background-repeat: no-repeat; }
+
+.icon-task-certificate { background-image: url('png/task-certificate.png'); background-repeat: no-repeat; }
+
+.top-tasks__item--blue .icon-task-chevron-right,
+.top-tasks__item--blue-dark .icon-task-chevron-right,
+.icon-task-chevron-right-white { background-image: url('png/task-chevron-right-white.png'); background-repeat: no-repeat; }
+
+.icon-task-chevron-right { background-image: url('png/task-chevron-right.png'); background-repeat: no-repeat; }
+
+.icon-task-education-white { background-image: url('png/task-education-white.png'); background-repeat: no-repeat; }
+
+.icon-task-education { background-image: url('png/task-education.png'); background-repeat: no-repeat; }
+
+.icon-task-environment-white { background-image: url('png/task-environment-white.png'); background-repeat: no-repeat; }
+
+.icon-task-environment { background-image: url('png/task-environment.png'); background-repeat: no-repeat; }
+
+.icon-task-family-white { background-image: url('png/task-family-white.png'); background-repeat: no-repeat; }
+
+.icon-task-family { background-image: url('png/task-family.png'); background-repeat: no-repeat; }
+
+.icon-task-home-white { background-image: url('png/task-home-white.png'); background-repeat: no-repeat; }
+
+.icon-task-home { background-image: url('png/task-home.png'); background-repeat: no-repeat; }
+
+.icon-task-job-white { background-image: url('png/task-job-white.png'); background-repeat: no-repeat; }
+
+.icon-task-job { background-image: url('png/task-job.png'); background-repeat: no-repeat; }
+
+.icon-task-leisure-white { background-image: url('png/task-leisure-white.png'); background-repeat: no-repeat; }
+
+.icon-task-leisure { background-image: url('png/task-leisure.png'); background-repeat: no-repeat; }
+
+.icon-task-tax-white { background-image: url('png/task-tax-white.png'); background-repeat: no-repeat; }
+
+.icon-task-tax { background-image: url('png/task-tax.png'); background-repeat: no-repeat; }
+
+.icon-task-transport-white { background-image: url('png/task-transport-white.png'); background-repeat: no-repeat; }
+
+.icon-task-transport { background-image: url('png/task-transport.png'); background-repeat: no-repeat; }
+
+.icon-task-waste-white { background-image: url('png/task-waste-white.png'); background-repeat: no-repeat; }
+
+.icon-task-waste { background-image: url('png/task-waste.png'); background-repeat: no-repeat; }
+
+.form__select,
+.icon-ui-arrow-down-filled { background-image: url('png/ui-arrow-down-filled.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-down-white { background-image: url('png/ui-arrow-down-white.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-down { background-image: url('png/ui-arrow-down.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-left-white { background-image: url('png/ui-arrow-left-white.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-left { background-image: url('png/ui-arrow-left.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-right-white { background-image: url('png/ui-arrow-right-white.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-right { background-image: url('png/ui-arrow-right.png'); background-repeat: no-repeat; }
+
+.icon-ui-chevron-down-black { background-image: url('png/ui-chevron-down-black.png'); background-repeat: no-repeat; }
+
+.hero__select,
+.icon-ui-chevron-down { background-image: url('png/ui-chevron-down.png'); background-repeat: no-repeat; }
+
+.icon-ui-location { background-image: url('png/ui-location.png'); background-repeat: no-repeat; }
+
+.icon-ui-pins { background-image: url('png/ui-pins.png'); background-repeat: no-repeat; }
+
+.icon-ui-print { background-image: url('png/ui-print.png'); background-repeat: no-repeat; }
+

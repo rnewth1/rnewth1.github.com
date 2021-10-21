@@ -1,0 +1,196 @@
+.boss-asset,
+.icon-boss { background-image: url('png/boss.png'); background-repeat: no-repeat; }
+
+.type-0.frame-0.frame-1,
+.icon-character-2 { background-image: url('png/character-2.png'); background-repeat: no-repeat; }
+
+.type-0.frame-0,
+.icon-character { background-image: url('png/character.png'); background-repeat: no-repeat; }
+
+.type-1.frame-0.frame-1,
+.icon-character1-2 { background-image: url('png/character1-2.png'); background-repeat: no-repeat; }
+
+.type-1.frame-0,
+.icon-character1 { background-image: url('png/character1.png'); background-repeat: no-repeat; }
+
+.type-2.frame-0.frame-1,
+.icon-character2-2 { background-image: url('png/character2-2.png'); background-repeat: no-repeat; }
+
+.type-2.frame-0,
+.icon-character2 { background-image: url('png/character2.png'); background-repeat: no-repeat; }
+
+.icon-close-quote { background-image: url('png/close-quote.png'); background-repeat: no-repeat; }
+
+.player-asset.explode,
+.type-2.frame-0.explode,
+.type-2.frame-0.frame-1.explode,
+.type-1.frame-0.explode,
+.type-1.frame-0.frame-1.explode,
+.type-0.frame-0.explode,
+.type-0.frame-0.frame-1.explode,
+.boss-asset.explode,
+.icon-explode { background-image: url('png/explode.png'); background-repeat: no-repeat; }
+
+.menu-overlay__logo,
+.icon-logo-pointer { background-image: url('png/logo-pointer.png'); background-repeat: no-repeat; }
+
+.icon-logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
+
+.icon-open-quote { background-image: url('png/open-quote.png'); background-repeat: no-repeat; }
+
+.icon-placeholder { background-image: url('png/placeholder.png'); background-repeat: no-repeat; }
+
+.player-asset,
+.icon-player { background-image: url('png/player.png'); background-repeat: no-repeat; }
+
+.icon-share:hover,
+.icon-share:focus,
+.icon-share:active,
+.icon-share-darkred { background-image: url('png/share-darkred.png'); background-repeat: no-repeat; }
+
+.icon-share { background-image: url('png/share.png'); background-repeat: no-repeat; }
+
+.icon-social-behance { background-image: url('png/social-behance.png'); background-repeat: no-repeat; }
+
+.icon-social-facebook { background-image: url('png/social-facebook.png'); background-repeat: no-repeat; }
+
+.icon-social-google { background-image: url('png/social-google.png'); background-repeat: no-repeat; }
+
+.icon-social-instagram { background-image: url('png/social-instagram.png'); background-repeat: no-repeat; }
+
+.icon-social-linkedin-primary { background-image: url('png/social-linkedin-primary.png'); background-repeat: no-repeat; }
+
+.icon-social-linkedin { background-image: url('png/social-linkedin.png'); background-repeat: no-repeat; }
+
+.icon-social-twitter { background-image: url('png/social-twitter.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-careers,
+.list--tile .list__link:focus .icon-tile-careers,
+.list--tile .list__link:active .icon-tile-careers,
+.icon-tile-careers-white { background-image: url('png/tile-careers-white.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-careers-white,
+.list--tile .list__link:focus .icon-tile-careers-white,
+.list--tile .list__link:active .icon-tile-careers-white,
+.icon-tile-careers { background-image: url('png/tile-careers.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-experience,
+.list--tile .list__link:focus .icon-tile-experience,
+.list--tile .list__link:active .icon-tile-experience,
+.icon-tile-experience-white { background-image: url('png/tile-experience-white.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-experience-white,
+.list--tile .list__link:focus .icon-tile-experience-white,
+.list--tile .list__link:active .icon-tile-experience-white,
+.icon-tile-experience { background-image: url('png/tile-experience.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-government,
+.list--tile .list__link:focus .icon-tile-government,
+.list--tile .list__link:active .icon-tile-government,
+.icon-tile-government-white { background-image: url('png/tile-government-white.png'); background-repeat: no-repeat; }
+
+.icon-tile-government { background-image: url('png/tile-government.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-placement,
+.list--tile .list__link:focus .icon-tile-placement,
+.list--tile .list__link:active .icon-tile-placement,
+.icon-tile-placement-white { background-image: url('png/tile-placement-white.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-placement-white,
+.list--tile .list__link:focus .icon-tile-placement-white,
+.list--tile .list__link:active .icon-tile-placement-white,
+.icon-tile-placement { background-image: url('png/tile-placement.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-project,
+.list--tile .list__link:focus .icon-tile-project,
+.list--tile .list__link:active .icon-tile-project,
+.icon-tile-project-white { background-image: url('png/tile-project-white.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-project-white,
+.list--tile .list__link:focus .icon-tile-project-white,
+.list--tile .list__link:active .icon-tile-project-white,
+.icon-tile-project { background-image: url('png/tile-project.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-speculative,
+.list--tile .list__link:focus .icon-tile-speculative,
+.list--tile .list__link:active .icon-tile-speculative,
+.icon-tile-speculative-white { background-image: url('png/tile-speculative-white.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-speculative-white,
+.list--tile .list__link:focus .icon-tile-speculative-white,
+.list--tile .list__link:active .icon-tile-speculative-white,
+.icon-tile-speculative { background-image: url('png/tile-speculative.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-support,
+.list--tile .list__link:focus .icon-tile-support,
+.list--tile .list__link:active .icon-tile-support,
+.icon-tile-support-white { background-image: url('png/tile-support-white.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-support-white,
+.list--tile .list__link:focus .icon-tile-support-white,
+.list--tile .list__link:active .icon-tile-support-white,
+.icon-tile-support { background-image: url('png/tile-support.png'); background-repeat: no-repeat; }
+
+.list--tile .list__link:hover .icon-tile-tourism,
+.list--tile .list__link:focus .icon-tile-tourism,
+.list--tile .list__link:active .icon-tile-tourism,
+.icon-tile-tourism-white { background-image: url('png/tile-tourism-white.png'); background-repeat: no-repeat; }
+
+.icon-tile-tourism { background-image: url('png/tile-tourism.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-down-primary { background-image: url('png/ui-arrow-down-primary.png'); background-repeat: no-repeat; }
+
+.form__select,
+.custom-select__option--value,
+.icon-ui-arrow-down { background-image: url('png/ui-arrow-down.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-left-thick { background-image: url('png/ui-arrow-left-thick.png'); background-repeat: no-repeat; }
+
+.pagination__link:hover .icon-ui-arrow-left,
+.pagination__link:focus .icon-ui-arrow-left,
+.pagination__link:active .icon-ui-arrow-left,
+.icon-ui-arrow-left-white { background-image: url('png/ui-arrow-left-white.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-left { background-image: url('png/ui-arrow-left.png'); background-repeat: no-repeat; }
+
+.pagination__link:hover .icon-ui-arrow-right,
+.pagination__link:focus .icon-ui-arrow-right,
+.pagination__link:active .icon-ui-arrow-right,
+.icon-ui-arrow-right-white { background-image: url('png/ui-arrow-right-white.png'); background-repeat: no-repeat; }
+
+.icon-ui-arrow-right { background-image: url('png/ui-arrow-right.png'); background-repeat: no-repeat; }
+
+.icon-video-pause-lightgrey { background-image: url('png/video-pause-lightgrey.png'); background-repeat: no-repeat; }
+
+.icon-video-pause-primary { background-image: url('png/video-pause-primary.png'); background-repeat: no-repeat; }
+
+.pause-video__button:hover .icon-video-pause-lightgrey,
+.pause-video__button:focus .icon-video-pause-lightgrey,
+.pause-video__button:active .icon-video-pause-lightgrey,
+.play-video .team__grid-video-control:hover .icon-video-play,
+.play-video .team__grid-video-control:focus .icon-video-play,
+.play-video .team__grid-video-control:active .icon-video-play,
+.icon-video-pause-white { background-image: url('png/video-pause-white.png'); background-repeat: no-repeat; }
+
+.play-video .team__grid-video-control .icon-video-play,
+.icon-video-pause { background-image: url('png/video-pause.png'); background-repeat: no-repeat; }
+
+.pause-video__button.is-active .icon-video-pause-lightgrey,
+.icon-video-play-lightgrey { background-image: url('png/video-play-lightgrey.png'); background-repeat: no-repeat; }
+
+.icon-video-play-primary { background-image: url('png/video-play-primary.png'); background-repeat: no-repeat; }
+
+.pause-video__button.is-active:hover .icon-video-pause-lightgrey,
+.pause-video__button.is-active:focus .icon-video-pause-lightgrey,
+.pause-video__button.is-active:active .icon-video-pause-lightgrey,
+.team__grid-video-control:hover .icon-video-play,
+.team__grid-video-control:focus .icon-video-play,
+.team__grid-video-control:active .icon-video-play,
+.icon-video-play-white { background-image: url('png/video-play-white.png'); background-repeat: no-repeat; }
+
+.icon-video-play { background-image: url('png/video-play.png'); background-repeat: no-repeat; }
+
+.icon-video-stop-primary { background-image: url('png/video-stop-primary.png'); background-repeat: no-repeat; }
+
+.icon-video-stop { background-image: url('png/video-stop.png'); background-repeat: no-repeat; }
+
