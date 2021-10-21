@@ -1,345 +1,146 @@
-<!DOCTYPE HTML>
-<html lang = "en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Robert Newth &#8212; Digital Design, UX &amp; Front-end Development</title>
-        <meta charset = "UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <link rel="stylesheet" type="text/css" href="assets/css/core.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="assets/img/favicon/manifest.json">
-        <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
-        <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
-        <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+        <title>Password Protected</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
+
+        <style>
+            *,
+            *:after,
+            *:before {
+                box-sizing: border-box;
+            }
+            body,
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                background: #f2f2f2;
+                color: #2D3737;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100%;
+            }
+
+            .protected {
+                background: #fff;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                border-radius: 3px;
+                min-width: 500px;
+
+            }
+            .protected__content {
+                padding: 24px 28px;
+            }
+            .protected__content__heading {
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0 0 12px;
+                line-height: 1;
+            }
+            .protected__alert {
+                display: none;
+                border-bottom: 1px solid transparent;
+                border-radius: 3px 3px 0 0;
+                padding: 12px 14px;
+                color: #a94442;
+                background-color: #f2dede;
+                border-color: #ebccd1;
+            }
+            .protected__content__input {
+                display: block;
+                border: solid 1px #ccc;
+                padding: 12px 14px;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                font-size: 16px;
+                width: 100%;
+                border-radius: 3px;
+
+                margin-bottom: 12px;
+            }
+            .protected__content__input:focus {
+                outline: none;
+                border-color: #228843;
+            }
+            .protected__content__btn {
+                background-color: #228843;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+                color: #fff;
+                padding: 12px 14px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+
+            }
+            .protected__content__btn:hover {
+                background-color: #1C6D36;
+            }
+
+        </style>
+
     </head>
+
     <body>
-        <div class="hero">
-            <span class="hero__menu-icon">
-                <span class="hero__menu-lines"></span>
-            </span>
-            <div class="hero__menu">
-                <div class="hero__menu-content">
-                    <ul class="nav">
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">work</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">about</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">contact</a>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a href="https://twitter.com/rnewth1" class="social__link social__twitter" target="_blank">twitter</a>
-                        </li>
-                        <li class="social__item">
-                            <a href="https://www.linkedin.com/in/robert-newth-336a8342" class="social__link social__linkedin" target="_blank">linkedin</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hero__container">
-                <img class="hero__logo" src="assets/img/logo.svg" alt="Robert Newth Logo" />
-                <h1 class="hero__title">robert newth</h1>
-                <p class="hero__text">
-                    digital design, ux &amp;<br /> front-end development 
-                </p>
+
+        <div class="protected">
+            <div class="protected__alert" data-id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" data-id="password" type="password" placeholder="password"/>
+                <button data-id="button" type="button" class="protected__content__btn">Continue</button>
             </div>
         </div>
-        <div class="container">
-            <div id="work" class="work">
-                <h2 class="work__title">&#45; work &#45;</h2>
-                <div class="work__items">
-                    <article class="work__item scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                        <img class="work__item-image" src="assets/img/clarks.jpg" />
-                        <h3 class="work__item-title">Clarks Originals</h3>
-                        <p class="work__item-text">
-                            A lookbook/brochure site to market Clarks Original's footwear.
-                        </p>
-                        <p class="work__item-text work__item-text--italics">
-                            Front-end build. Custom Wordpress theme built with Timber &amp; ACF.
-                        </p>
-                        <a class="button work__button" href="http://clarksoriginals.com" target="_blank"><span>View site</span></a>
-                    </article>
-                    <article class="work__item scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                        <img class="work__item-image" src="assets/img/hal.jpg" />
-                        <h3 class="work__item-title">Hand &amp; Lock</h3>
-                        <p class="work__item-text">
-                            A brochure site to showcase hand embroidery work, news and courses.
-                        </p>
-                        <p class="work__item-text work__item-text--italics">
-                            Front-end build. Custom Wordpress theme built with Timber &amp; ACF.
-                        </p>
-                        <a class="button work__button" href="http://handembroidery.com" target="_blank"><span>View site</span></a>
-                    </article>
-                    <article class="work__item scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                        <img class="work__item-image" src="assets/img/un.jpg" />
-                        <h3 class="work__item-title">Un.titled</h3>
-                        <p class="work__item-text">
-                            A splash page showcasing the design heritage and history of a creative studio.
-                        </p>
-                        <p class="work__item-text work__item-text--italics">
-                            Front-end build.
-                        </p>
-                        <a class="button work__button" href="http://un.titled.co.uk/18" target="_blank"><span>View site</span></a>
-                    </article>
-                    <article class="work__item scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                        <img class="work__item-image" src="assets/img/arp.jpg" />
-                        <h3 class="work__item-title">ARP</h3>
-                        <p class="work__item-text">
-                            A brochure site showing the products and services of a guttering company.
-                        </p>
-                        <p class="work__item-text work__item-text--italics">
-                            Front-end build. Custom Wordpress theme built with Timber &amp; ACF.
-                        </p>
-                        <a class="button work__button" href="http://arp-ltd.com" target="_blank"><span>View site</span></a>
-                    </article>
-                    <article class="work__item scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                        <img class="work__item-image" src="assets/img/hh.jpg" />
-                        <h3 class="work__item-title">Healthy Hearing</h3>
-                        <p class="work__item-text">
-                            A brochure site showing the products and services of a hearing aid company.
-                        </p>
-                        <p class="work__item-text work__item-text--italics">
-                            Front-end build. Custom Wordpress theme built with Timber &amp; ACF.
-                        </p>
-                        <a class="button work__button" href="http://healthyhearing.co.uk" target="_blank"><span>View site</span></a>
-                    </article>
-                    <article class="work__item scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                        <img class="work__item-image" src="assets/img/lumi.jpg" />
-                        <h3 class="work__item-title">Lumi</h3>
-                        <p class="work__item-text">
-                            A lighting ecommerce shop.
-                        </p>
-                        <p class="work__item-text work__item-text--italics">
-                            Front-end build. Custom Shopify theme.
-                        </p>
-                        <a class="button work__button" href="https://lumi.is/" target="_blank"><span>View site</span></a>
-                    </article>
-                </div>
-            </div>
-            <div id="about" class="about">
-                <div class="about__container scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                    <h2 class="about__title">&#45; about &#45;</h2>
-                    <div class="about__image">
-                        <img class="about__slide-image" alt="Robert Newth" src="assets/img/rob-newth.png" />
-                    </div>
-                    <div class="about__supporting-text">
-                        <p>
-                            Hey I'm Rob, a front-end developer based in Leicester. Whilst away from the screen i'll most likely be at the theatre, doing home improvements or spoiling my kitty.
-                        </p>
-                        <p>
-                            Bio: An efficient, self-motivated individual who thrives as part of a collaborative, agile team as well as being self-sufficient and organised with minimum supervision. A keen, quick learner who strives to develop both technically and personally. A creative, fresh approach is applied to all work ensuring professional, contemporary, user-friendly results.
-                        </p>
-                    </div>
-                </div>
-                <div class="about__container about__container--shaded scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                    <h3 class="about__title">Work Experience</h3>
-                    <div class="about__text">
-                        <h4 class="about__sub-title">Front-end Developer at Un.titled; June 2016 - September 2017</h4>
-                        <p>
-                            At Un.titled/Williams Commerce I was a Front-end Developer with occasional Design and Back-end duties. Working with a range of clients to create bespoke, customisable brochure and ecommerce websites.
-                        </p>
-                        <ul>
-                            <li>
-                                Core part of the development process from client meetings right through to deployment
-                            </li>
-                            <li>
-                                Work on varied projects with multiple clients simultaneously
-                            </li>
-                            <li>
-                                Create fully responsive Wordpress and Shopify themes
-                            </li>
-                            <li>
-                                Work closely with the design team to ensure our websites are both visually stunning and have strong user experience and interaction
-                            </li>
-                            <li>
-                                Maintaining and developing new features for ongoing clients
-                            </li>
-                            <li>
-                                Interaction with Directors, Account Managers, Designers, Developers &amp; Clients
-                            </li>
-                            <li>
-                                Keeping up-to-date with the latest front-end technologies
-                            </li>
-                        </ul>
-                        <h4 class="about__sub-title">Web Designer/Developer at ThinkOn; Oct 2012 - May 2016</h4>
-                        <p>
-                            During my time at ThinkOn, I progressed from placement student, to sole web designer, to overseeing the design/media team. I was responsible for the design/front-end work on our websites, print work, digital assets and marketing.
-                        </p>
-                        <ul>
-                            <li>
-                                Design and front-end development
-                            </li>
-                            <li>
-                                Maintain websites, mobile sites and web applications
-                            </li>
-                            <li>
-                                Create digital assets, images, diagrams, banners
-                            </li>
-                            <li>
-                                Interaction with management, development, design/media, marketing, testing and technical operations departments
-                            </li>
-                            <li>
-                                Design/build email and web campaigns
-                            </li>
-                            <li>
-                                Fixing UI errors and bugs
-                            </li>
-                            <li>
-                                User experience, usability and cross browser/device testing
-                            </li>
-                            <li>
-                                Agile workflow - work on multiple projects simultaneously to a high standard
-                            </li>
-                            <li>
-                                Experience with ticketing systems, scrums, sprints, kanban boards
-                            </li>
-                        </ul>
-                        <h4 class="about__sub-title">BSc(Hons) Computing at De Montfort University; 2012-2013</h4>
-                        <p>
-                            Plus continued part-time work with Go MAD Thinking
-                        </p>
-                        <h4 class="about__sub-title">Junior Designer at Go MAD Thinking; 2011-2012</h4>
-                        <ul>
-                            <li>
-                                12-month work experience placement
-                            </li>
-                            <li>
-                                Testing websites in all browsers and creating test plans
-                            </li>
-                            <li>
-                                Developing design and coding skills
-                            </li>
-                            <li>
-                                Wordpresss CMS research and implementation
-                            </li>
-                            <li>
-                                Developed fully responsive websites to work across a range of devices
-                            </li>
-                            <li>
-                                Created an ecommerce website
-                            </li>
-                        </ul>
-                        <h4 class="about__sub-title">Computing HND at De Montfort University; 2009-2011</h4>
-                        <h4 class="about__sub-title">Wreake Valley Community College; 2002-2009</h4>
-                        <p>
-                            A Levels - Computing, Mathematics &amp; Science, AS Level - Design Technology<br />
-                            10 GCSEs including Mathematics, English, Science &amp; Information Technology
-                        </p>
-                    </div>
-                </div>
-                <div class="about__container about__container--shaded scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein" data-translatex="-200">
-                    <h3 class="about__title">Technical Skills</h3>
-                    <div class="about__text">
-                        <ul class="about__list">
-                            <li class="about__list-item">
-                                HTML(5), CSS(3), SASS, BEM
-                            </li>
-                            <li class="about__list-item">
-                                JavaScript
-                            </li>
-                            <li class="about__list-item">
-                                Gulp automation &amp; NPM packages
-                            </li>
-                            <li class="about__list-item">
-                                Adobe Creative Suite
-                            </li>
-                            <li class="about__list-item">
-                                Wordpress CMS - custom themes built with ACF &amp; Timber
-                            </li>
-                            <li class="about__list-item">
-                                Shopify ecommerce - custom themes built with Liquid
-                            </li>
-                            <li class="about__list-item">
-                                Responsive Web Design - fluid layouts, media queries, Susy &amp; Bootstrap
-                            </li>
-                            <li class="about__list-item">
-                                GIT/SVN
-                            </li>
-                            <li class="about__list-item">
-                                Deployment (Ansible)
-                            </li>
-                            <li class="about__list-item">
-                                Email campaigns (MailChimp, Hubspot)
-                            </li>
-                            <li class="about__list-item">
-                                Wireframe/Prototype (MockFlow, InVision)
-                            </li>
-                            <li class="about__list-item">
-                                Cross browser testing (BrowserStack)
-                            </li>
-                            <li class="about__list-item">
-                                Project Management (Slack, Trello, JIRA)
-                            </li>
-                            <li class="about__list-item">
-                                SEO, Google Analytics &amp; Accessibility
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about__container about__container--shaded scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatey="200" easing="easein" data-translatex="200">
-                    <h3 class="about__title">Personal Skills</h3>
-                    <div class="about__text">
-                        <ul class="about__list">
-                            <li class="about__list-item">
-                                Creative
-                            </li>
-                            <li class="about__list-item">
-                                Attention to detail
-                            </li>
-                            <li class="about__list-item">
-                                Deadline orientated
-                            </li>
-                            <li class="about__list-item">
-                                Down to earth
-                            </li>
-                            <li class="about__list-item">
-                                Professional
-                            </li>
-                            <li class="about__list-item">
-                                Punctual
-                            </li>
-                            <li class="about__list-item">
-                                Reliable
-                            </li>
-                            <li class="about__list-item">
-                                Ambitious
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="about__title about__title--spacing">Recommendation</h3>
-                    <p>
-                        “I have worked with Rob for three years and he is a joy to work with. He provides excellent customer service and always exceeds expectations. He constantly looks to improve on products and is very focused and organised to ensure he meets project deadlines. He approaches everything positively and is great to be around.” <i>Kathryn Roberts, Head of Operations, ThinkOn</i>
-                    </p>
-                </div>
-            </div>
-            <div id="contact" class="contact scrollme animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatey="200" easing="easein">
-                <h2 class="contact__title">&#45; contact &#45;</h2>
-                <div class="contact__buttons">
-                    <a class="button contact__button" href="mailto:rbnewth@gmail.com">Email me</a>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a href="https://twitter.com/rnewth1" class="social__link social__twitter" target="_blank">twitter</a>
-                        </li>
-                        <li class="social__item">
-                            <a href="https://www.linkedin.com/in/robert-newth-336a8342" class="social__link social__linkedin" target="_blank">linkedin</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer">
-                <p class="footer__copyright">
-                    robert newth &#45; copyright &#45; &copy;2017
-                </p>
-            </div>
-        </div>
-        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.scrollme.min.js"></script>
-        <script type="text/javascript" src="assets/js/core.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+        <script type="text/javascript">
+            "use strict"
+            var button = document.querySelectorAll('[data-id="button"]')
+            var password = document.querySelectorAll('[data-id="password"]')
+
+            function login(secret) {
+                var hash = sha1(secret)
+                var url = hash + "/index.html"
+                var alert = document.querySelectorAll('[data-id="alert"]')
+
+                var request = new XMLHttpRequest()
+                request.open('GET', url, true)
+
+                request.onload = function () {
+                    if (request.status >= 200 && request.status < 400) {
+                        window.location = url
+                    } else {
+                        parent.location.hash = hash
+                        alert[0].style.display = 'block'
+                        password[0].setAttribute('placeholder', 'Incorrect password')
+                        password[0].value = ''
+                    }
+                }
+                request.onerror = function () {
+                    parent.location.hash = hash
+                    alert[0].style.display = 'block'
+                    password[0].setAttribute('placeholder', 'Incorrect password')
+                    password[0].value = ''
+                }
+                request.send()
+            }
+
+            button[0].addEventListener("click", function () {
+                login(password[0].value)
+            })
+
+            document.onkeydown = function (e) {
+                e = e || window.event
+                if (e.keyCode == 13) {
+                    login(password[0].value)
+                }
+            }
+        </script>
     </body>
 </html>
